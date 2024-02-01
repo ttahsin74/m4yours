@@ -19,11 +19,19 @@ import IndustriesItem from "./IndustriesItem";
 
 const Banner = () => {
   const [isVideoVisible, setVideoVisible] = useState(false);
+  const [isHover, setHover] = useState(false);
   const handleVideo = () => {
     setVideoVisible(true);
   };
   const handlecloseButton = () => {
     setVideoVisible(false);
+  };
+  const handleMouseEnter = () => {
+    setHover(true);
+  };
+
+  const handleMouseLeave = () => {
+    setHover(false);
   };
   const settings = {
     dots: false,
@@ -53,18 +61,26 @@ const Banner = () => {
             in an age of digital transformation.
           </h4>
           <div className="inline-block text-center px-[10px] text-[#fff] font-semibold">
-            <div className="inline-block" onClick={handleVideo}>
+            <div
+              className="inline-block"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              onClick={handleVideo}
+            >
               <p className="inline-block">See how we work</p>
-              <FaRegCirclePlay
-                className="inline-block mx-[20px]"
-                color="#F1614A"
-                size="40px"
-              />
-              <FaCirclePlay
-                className="inline-block"
-                color="#F1614A"
-                size="40px"
-              />
+              {isHover ? (
+                <FaCirclePlay
+                  className="inline-block mx-[20px] duration-[400ms]"
+                  color="#F1614A"
+                  size="40px"
+                />
+              ) : (
+                <FaRegCirclePlay
+                  className="inline-block mx-[20px] duration-[400ms]"
+                  color="#F1614A"
+                  size="40px"
+                />
+              )}
             </div>
             {isVideoVisible && (
               <div className="video-controll">
@@ -86,9 +102,9 @@ const Banner = () => {
             )}
           </div>
 
-          <Flex className="gap-[20px] items-end	">
+          <Flex className="justify-between items-end	">
             <Image src={AppDevelopment} />
-            <div className="flex items-center flex-col w-[415px]">
+            <div className="flex items-center flex-col w-[520px]">
               <Flex className="gap-[30px] ">
                 <span className="h-[114px] w-[3px] inline-block bg-[linear-gradient(180deg,#accae4,rgba(85,114,139,0))]"></span>
                 <div className="mt-[5px]">
@@ -98,9 +114,9 @@ const Banner = () => {
                   <p className="text-[#8C8B90]">1000+ Project done</p>
                 </div>
               </Flex>
-              <div className="bg-[#28292D] custom_tabs">
+              <div className="bg-[#28292D] custom-tabs">
                 <Tabs className="">
-                  <TabList className="text-[#FFF] flex gap-0 bg-[#2D3134] py-[10px]">
+                  <TabList className="justify-between text-[#FFF] rounded-tl-[20px] rounded-tr-[20px] flex gap-0 bg-[#2D3134] py-[10px] px-[10px]">
                     <Tab>
                       <p
                         className="hover:text-[#F1614A] text-[14px] duration-[
@@ -210,15 +226,15 @@ const Banner = () => {
                 </Tabs>
               </div>
             </div>
-            <div className="flex items-end">
-              <Slider className="w-[400px]" {...settings}>
+            <div className="flex items-end gap-[10px]">
+              <Slider className="w-[600px] rounded-tl-[20px]" {...settings}>
                 <Image src={Unisearch} />
                 <Image src={Aist} />
                 <Image src={Eatery} />
                 <Image src={Mi} />
               </Slider>
-              <div className="text-center bg-[#28292D]">
-                <h2 className="text-[28px] font-bold text-[#FFF]">
+              <div className="text-center bg-[#28292D] rounded-tl-[15px] rounded-tr-[15px]">
+                <h2 className="text-[28px] font-bold text-[#FFF] mt-[20px]">
                   Industries
                 </h2>
                 <div className="flex  px-[20px] pt-[25px] pb-[45px] justify-between w-[200px] flex-wrap gap-[12px]">

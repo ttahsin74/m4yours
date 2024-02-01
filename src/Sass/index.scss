@@ -4,9 +4,30 @@
     color: rgb(255, 255, 255);
     
 }
-.react-tabs__tab {
-    border: 0px solid transparent;
-    padding: 6px 10px;
+// .react-tabs__tab {
+//     border: 0px solid transparent;
+//     padding: 6px 10px;
+// }
+.custom-tabs{
+    border-radius: 20px 20px 0 0;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    -ms-border-radius: 20px 20px 0 0;
+    -o-border-radius: 20px 20px 0 0;
+}
+.custom-tablist{
+    border-radius: 20px 20px 0 0;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    -ms-border-radius: 20px 20px 0 0;
+    -o-border-radius: 20px 20px 0 0;
+}
+.slick-list{
+    border-radius: 20px 20px 0 0;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    -ms-border-radius: 20px 20px 0 0;
+    -o-border-radius: 20px 20px 0 0;
 }
 .video-controll{
     position: fixed;

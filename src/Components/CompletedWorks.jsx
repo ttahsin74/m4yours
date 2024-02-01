@@ -15,8 +15,7 @@ const CompletedWorks = () => {
   }, [inView]);
 
   return (
-    <div className="">
-      <div className="opacity-80 text-[500px] text-center font-bold">12+</div>
+    <div className=" mt-[70px]">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{

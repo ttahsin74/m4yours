@@ -4,71 +4,71 @@ import { FaHeartCirclePlus } from "react-icons/fa6";
 const IndustriesItem = ({ itemName, itemIcon }) => {
   return (
     <>
-      <div className="bg-[#1C1C1F] text-center p-[10px]">
+      <div className="bg-[#2C2D31] text-center p-[10px]">
         <FaHeartCirclePlus
           color="#fff"
           size={"23px"}
           className="inline-block border-1 border[#e5e7eb]"
         />
-        <p className="text-[#fff] w-[50px] text-[9px]">Healthcare</p>
+        <p className="text-[#fff] w-[50px] text-[10px]">Healthcare</p>
       </div>
-      <div className="bg-[#1C1C1F] text-center p-[10px]">
+      <div className="bg-[#2C2D31] text-center p-[10px]">
         <FaHeartCirclePlus
           color="#fff"
           size={"23px"}
           className="inline-block border-1 border[#e5e7eb]"
         />
-        <p className="text-[#fff] w-[50px] text-[9px]">Education / eLearning</p>
+        <p className="text-[#fff] w-[50px] text-[10px]">Education / eLearning</p>
       </div>
-      <div className="bg-[#1C1C1F] text-center p-[10px]">
+      <div className="bg-[#2C2D31] text-center p-[10px]">
         <FaHeartCirclePlus
           color="#fff"
           size={"23px"}
           className="inline-block border-1 border[#e5e7eb]"
         />
-        <p className="text-[#fff] w-[50px] text-[9px]">Retail</p>
+        <p className="text-[#fff] w-[50px] text-[10px]">Retail</p>
       </div>
-      <div className="bg-[#1C1C1F] text-center p-[10px]">
+      <div className="bg-[#2C2D31] text-center p-[10px]">
         <FaHeartCirclePlus
           color="#fff"
           size={"23px"}
           className="inline-block border-1 border[#e5e7eb]"
         />
-        <p className="text-[#fff] w-[50px] text-[9px]">Real Estate</p>
+        <p className="text-[#fff] w-[50px] text-[10px]">Real Estate</p>
       </div>
-      <div className="bg-[#1C1C1F] text-center p-[10px]">
+      <div className="bg-[#2C2D31] text-center p-[10px]">
         <FaHeartCirclePlus
           color="#fff"
           size={"23px"}
           className="inline-block border-1 border[#e5e7eb]"
         />
-        <p className="text-[#fff] w-[50px] text-[9px]">Travel & Hospitality</p>
+        <p className="text-[#fff] w-[50px] text-[10px]">Travel & Hospitality</p>
       </div>
-      <div className="bg-[#1C1C1F] text-center p-[10px]">
+      <div className="bg-[#2C2D31] text-center p-[10px]">
         <FaHeartCirclePlus
           color="#fff"
           size={"23px"}
           className="inline-block border-1 border[#e5e7eb]"
         />
-        <p className="text-[#fff] w-[50px] text-[9px]">
+        <p className="text-[#fff] w-[50px] text-[10px]">
           Logistics & Distribution
         </p>
       </div>
-      <div className="bg-[#1C1C1F] text-center p-[10px]">
+      <div className="bg-[#2C2D31] text-center p-[10px]">
         <FaHeartCirclePlus
           color="#fff"
           size={"23px"}
           className="inline-block border-1 border[#e5e7eb]"
         />
-        <p className="text-[#fff] w-[50px] text-[9px]">Media & Entertainment</p>
+        <p className="text-[#fff] w-[50px] text-[10px]">Media & Entertainment</p>
       </div>
-      <div className="bg-[#1C1C1F] text-center p-[10px]">
+      <div className="bg-[#2C2D31] text-center p-[10px]">
         <FaHeartCirclePlus
           color="#fff"
           size={"23px"}
           className="inline-block border-1 border[#e5e7eb]"
         />
-        <p className="text-[#fff] w-[50px] text-[9px]">FinTECH</p>
+        <p className="text-[#fff] w-[50px] text-[10px]">FinTECH</p>
       </div>
     </>
   );

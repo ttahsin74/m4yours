@@ -7,25 +7,25 @@ import "../Sass/index.scss";
 
 const OurService = () => {
   return (
-    <div className="flex items-center">
-      <div className="relative w-[50%] h-[145vh]">
+    <div className="flex items-center max-w-[1170px] gap-[100px] m-auto">
+      <div className="relative w-[50%] h-[900px]">
         <Image
           imgClassname="rounded-[12px]"
-          className="absolute top-[410px] left-[200px] z-30"
+          className="absolute top-[400px] left-[40px] z-30"
           src={ServiceImgOne}
         />
         <Image
           imgClassname="rounded-[12px]"
-          className="absolute top-[100px] left-[250px] z-10"
+          className="absolute top-[100px] left-[100px] z-10"
           src={ServiceImgTwo}
         />
         <Image
           imgClassname="rounded-[12px]"
-          className="absolute  top-[155px] left-[20px] z-20"
+          className="absolute  top-[155px] left-[-120px] z-20"
           src={ServiceImgThree}
         />
       </div>
-      <div className="w-[40%]">
+      <div className="w-[50%]">
         <p className="text-[#F1614A] mb-[15px] inline-block text-[14px] bg-[#FFEFEC] py-[10px] px-[20px] rounded-[20px]">
           Top Web And Mobile Apps Development Company
         </p>

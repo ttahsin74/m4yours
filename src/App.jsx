@@ -9,19 +9,21 @@ import Services from "./Components/Services";
 import CurrentlyWorking from "./Components/CurrentlyWorking";
 import InsightNews from "./Components/InsightNews";
 import ContactUs from "./Components/ContactUs";
+import Fotter from "./Components/Fotter";
 
 export default function App() {
   return (
     <>
       <Navber />
       <Banner />
-      <OurService />
+      {/* <OurService />
       <CompletedWorks />
       <BuildIdea />
       <Services />
       <CurrentlyWorking />
       <InsightNews />
       <ContactUs />
+      <Fotter />  */}
     </>
   );
 }

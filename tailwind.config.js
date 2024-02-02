@@ -9,7 +9,7 @@ export default {
           "linear-gradient(180deg,rgba(65,114,206,.2),hsla(0,0%,100%,.2) 68%)",
       },
       colors: {
-        'lol': 'linear-gradient(180deg,rgba(65,114,206,.2),hsla(0,0%,100%,.2) 68%)',
+        lol: "linear-gradient(180deg,rgba(65,114,206,.2),hsla(0,0%,100%,.2) 68%)",
       },
     },
   },

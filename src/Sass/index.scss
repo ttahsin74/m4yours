@@ -4,10 +4,10 @@
     color: rgb(255, 255, 255);
     
 }
-// .react-tabs__tab {
-//     border: 0px solid transparent;
-//     padding: 6px 10px;
-// }
+.react-tabs__tab {
+    border: 0px solid transparent;
+    padding: 5px 10px;
+}
 .custom-tabs{
     border-radius: 20px 20px 0 0;
     -webkit-border-radius: 20px 20px 0 0;
@@ -50,3 +50,8 @@
     height: 2px; 
     background-color: #F1614A;
   }
+
+//   ========================responsive====================
+@media (min-width:320px) and (max-width:575px){
+    
+}

@@ -4,7 +4,7 @@ function Counter({ limit, children, suffix, details }) {
   return (
     <div className="counter text-center max-w-[1080px] m-auto">
       <CountUp
-        className=" mt-[20px] text-[65px] font-bold text-[#F1614A]"
+        className=" mt-[20px] md:text-[65px] text-[55px] font-bold text-[#F1614A] "
         end={limit}
         duration={4}
         suffix={suffix}

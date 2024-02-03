@@ -5,14 +5,14 @@ const BuildIdea = () => {
   return (
     <section className="bg-[#FBFDFF] pt-[80px]">
       <div className="max-w-[1170px] m-auto">
-        <div className="max-w-[770px] m-auto">
+        <div className="max-w-[770px] m-auto p-[15px] lg:p-[0]">
           <h3 className="text-[#113759] text-[36px] font-bold">
             We build ideas driven by the future.
           </h3>
-          <p className="mt-[15px] mb-[40px] text-base font-medium text-[#F1614A]">
+          <p className="mt-[15px] lg:mb-[40px] mb-[20px] text-base font-medium text-[#F1614A]">
             — The process
           </p>
-          <div className="flex gap-[40px] flex-wrap justify-between">
+          <div className="flex lg:gap-[40px] gap-[20px] flex-wrap justify-between">
             <IdeasItem
               iteasTitel={"Discover_"}
               ideasDetails={

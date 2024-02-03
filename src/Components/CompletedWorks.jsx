@@ -24,21 +24,21 @@ const CompletedWorks = () => {
           transition: { duration: 0.8, ease: "easeInOut", delay: 0.2 },
         }}
       >
-        <div className="text-center">
+        <div className="text-center lg:px-[0px] px-[15px]">
           <p className="text-[#F1614A] mb-[15px] inline-block text-[14px] bg-[#FFEFEC] py-[10px] px-[20px] rounded-[20px]">
             What We Achieved
           </p>
           <h2 className="mb-5 text-[#113759] text-[36px] font-bold">
             The thousands of completed works.
           </h2>
-          <p className="text-lg text-[#808291] mb-[30px] w-[650px] m-auto">
+          <p className="text-lg text-[#808291] mb-[30px] lg:w-[650px]  w-auto m-auto">
             The success of our company mirrors the success of our clients.
             Creative designs tailored to your brand strategy are what we do as a
             top branding agency.
           </p>
         </div>
       </motion.div>
-      <div ref={ref} className="flex">
+      <div ref={ref} className="flex flex-wrap">
         <Counter
           limit={"12"}
           suffix={"+"}

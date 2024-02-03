@@ -14,16 +14,16 @@ import Fotter from "./Components/Fotter";
 export default function App() {
   return (
     <>
-      <Navber />
+      {/* <Navber />
       <Banner />
-      {/* <OurService />
+      <OurService />
       <CompletedWorks />
       <BuildIdea />
       <Services />
       <CurrentlyWorking />
-      <InsightNews />
+      <InsightNews /> */}
       <ContactUs />
-      <Fotter />  */}
+      <Fotter />
     </>
   );
 }

@@ -7,7 +7,7 @@ import "../Sass/index.scss";
 
 const OurService = () => {
   return (
-    <div className="flex items-center max-w-[1170px] gap-[100px] m-auto">
+    <div className="flex flex-wrap lg:flex-nowrap lg:flex items-center max-w-[1170px] gap-[100px] m-auto">
       <div className="relative w-[50%] h-[900px]">
         <Image
           imgClassname="rounded-[12px]"
@@ -25,11 +25,11 @@ const OurService = () => {
           src={ServiceImgThree}
         />
       </div>
-      <div className="w-[50%]">
-        <p className="text-[#F1614A] mb-[15px] inline-block text-[14px] bg-[#FFEFEC] py-[10px] px-[20px] rounded-[20px]">
+      <div className=" lg:w-[50%] w-full px-[10px] lg:px-[0px] lg:text-left text-center">
+        <p className="text-[#F1614A] mb-[15px] inline-block  lg:text-[14px text-[12px] bg-[#FFEFEC] py-[10px] px-[20px] rounded-[20px]">
           Top Web And Mobile Apps Development Company
         </p>
-        <h2 className="text-[#113759] text-[36px] font-bold">
+        <h2 className="text-[#113759] lg:text-[36px] text-[28px] font-bold">
           Your <span className="text-[#f1614a]">Trusted</span> <br />{" "}
           Development <br /> Partner.
         </h2>

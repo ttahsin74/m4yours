@@ -52,11 +52,11 @@ const Banner = () => {
               Digital Experience
             </button>
           </div>
-          <h1 className="mt-[20px] text-center m-auto text-[50px] font-bold text-[#fff] max-w-[906px]">
+          <h1 className="mt-[20px] text-center m-auto lg:text-[50px] md:text-[40px] sm:text-[40px] text-[30px] font-bold text-[#fff] max-w-[966px] p-[10px]">
             Web, Mobile, Cloud, Branding, Digital Marketing and{" "}
             <span className="text-[#F1614A]">business solution</span>
           </h1>
-          <h4 className="my-[20px] m-auto text-center text-[#8C8B90] max-w-[610px] text-[20px] font-medium">
+          <h4 className="my-[20px] m-auto text-center text-[#8C8B90] max-w-[610px] lg:text-[20px] text-[18px] lg:p-0 p-2 font-medium">
             We merge imagination and technology to help thousands of brands grow
             in an age of digital transformation.
           </h4>
@@ -102,9 +102,9 @@ const Banner = () => {
             )}
           </div>
 
-          <Flex className="justify-between items-end	">
-            <Image src={AppDevelopment} />
-            <div className="flex items-center flex-col w-[520px]">
+          <Flex className="justify-between items-end flex-wrap pt-[30px] xl:px-[0px] px-[10px]">
+            <Image className={"xl:block hidden"} src={AppDevelopment} />
+            <div className="flex items-center flex-col ">
               <Flex className="gap-[30px] ">
                 <span className="h-[114px] w-[3px] inline-block bg-[linear-gradient(180deg,#accae4,rgba(85,114,139,0))]"></span>
                 <div className="mt-[5px]">
@@ -114,13 +114,13 @@ const Banner = () => {
                   <p className="text-[#8C8B90]">1000+ Project done</p>
                 </div>
               </Flex>
-              <div className="bg-[#28292D] custom-tabs">
+              <div className="bg-[#28292D] custom-tabs xl:w-[600px] lg:w-[430px] sm:w-auto">
                 <Tabs className="">
-                  <TabList className="justify-between text-[#FFF] rounded-tl-[20px] rounded-tr-[20px] flex gap-0 bg-[#2D3134] py-[10px] px-[10px]">
+                  <TabList className="justify-between text-[#FFF] rounded-tl-[20px] rounded-tr-[20px] flex gap-0 bg-[#2D3134] py-[10px] px-[10px] min-w-sreen scroll-auto">
                     <Tab>
                       <p
                         className="hover:text-[#F1614A] text-[14px] duration-[
-                        200ms]"
+                        300ms]"
                       >
                         Frontend
                       </p>
@@ -144,11 +144,11 @@ const Banner = () => {
                   </TabList>
 
                   <TabPanel>
-                    <div className=" p-[20px]">
+                    <div className=" px-[20px] py-[10px]">
                       <h2 className="mb-2 text-2xl font-medium text-white">
                         Frontend Web Development
                       </h2>
-                      <p className="text-[#fff]">
+                      <p className="text-[#fff]  xl:text-[14px]">
                         M4YOURS IT is a front-end development company, provides
                         customized, sturdy, and secure front-end solutions that
                         are tailored to clients' requirements.It is the front
@@ -160,86 +160,84 @@ const Banner = () => {
                     </div>
                   </TabPanel>
                   <TabPanel>
-                    <div className=" p-[20px]">
+                    <div className=" px-[20px] py-[10px]">
                       <h2 className="mb-2 text-2xl font-medium text-white">
                         MEAN
                       </h2>
-                      <p className="text-[#fff]">
-                        M4YOURS IT is a front-end development company, provides
-                        customized, sturdy, and secure front-end solutions that
-                        are tailored to clients' requirements.It is the front
-                        end web developer who creates everything on a website,
-                        such as buttons, links, animations, and so on.
-                        Developers are responsible for translating client
-                        visions and design concepts into code.
+                      <p className="text-[#fff] xl:text-[14px]">
+                        M4YOURS IT provides robust and secure web application
+                        development using MongoDB, ExpressJS, Angular, NodeJS,
+                        and React. MEAN/MERN development services simplify
+                        deployment and create scalable applications aligned with
+                        client strategy.
                       </p>
                     </div>
                   </TabPanel>
                   <TabPanel>
-                    <div className=" p-[20px]">
+                    <div className=" px-[20px] py-[10px]">
                       <h2 className="mb-2 text-2xl font-medium text-white">
                         LAMP
                       </h2>
-                      <p className="text-[#fff]">
-                        M4YOURS IT is a front-end development company, provides
-                        customized, sturdy, and secure front-end solutions that
-                        are tailored to clients' requirements.It is the front
-                        end web developer who creates everything on a website,
-                        such as buttons, links, animations, and so on.
-                        Developers are responsible for translating client
-                        visions and design concepts into code.
+                      <p className="text-[#fff] xl:text-[14px]">
+                        For the development of dynamic, high-performance, and
+                        responsive web applications, M4YOURS IT offers services
+                        based on the LAMP (Linux, Apache, MySQL, and PHP) stack.
+                        Providing comprehensive dynamic web application
+                        development services, we create powerful applications
+                        with the highest quality standards. Our mission is to
+                        empower end users by delivering outstanding customer
+                        experiences and accelerating time-to-market.
                       </p>
                     </div>
                   </TabPanel>
                   <TabPanel>
-                    <div className=" p-[20px]">
+                    <div className=" px-[20px] py-[10px]">
                       <h2 className="mb-2 text-2xl font-medium text-white">
                         Mobile APP
                       </h2>
-                      <p className="text-[#fff]">
-                        M4YOURS IT is a front-end development company, provides
-                        customized, sturdy, and secure front-end solutions that
-                        are tailored to clients' requirements.It is the front
-                        end web developer who creates everything on a website,
-                        such as buttons, links, animations, and so on.
-                        Developers are responsible for translating client
-                        visions and design concepts into code.
+                      <p className="text-[#fff] xl:text-[14px]">
+                        Mobile app development services are provided by M4YOURS
+                        IT according to your needs, budget, and schedule as a
+                        leading mobile app development company in Bangladesh.
+                        Mobile app development is something we specialize in
+                        doing in Bangladesh, helping startups, small businesses,
+                        and large enterprises develop, launch, and manage custom
+                        mobile applications.
                       </p>
                     </div>
                   </TabPanel>
                   <TabPanel>
-                    <div className=" p-[20px]">
+                    <div className="px-[20px] py-[10px]">
                       <h2 className="mb-2 text-2xl font-medium text-white">
                         Open Source
                       </h2>
-                      <p className="text-[#fff]">
-                        M4YOURS IT is a front-end development company, provides
-                        customized, sturdy, and secure front-end solutions that
-                        are tailored to clients' requirements.It is the front
-                        end web developer who creates everything on a website,
-                        such as buttons, links, animations, and so on.
-                        Developers are responsible for translating client
-                        visions and design concepts into code.
+                      <p className="text-[#fff] xl:text-[14px]">
+                        The idea behind open-source software is to make the code
+                        publicly available. Using peer review and community
+                        production, it is developed decentralized and
+                        collaboratively. Its values and production model are
+                        used to solve problems with open-source software.
                       </p>
                     </div>
                   </TabPanel>
                 </Tabs>
               </div>
             </div>
-            <div className="flex items-end gap-[10px]">
-              <Slider className="w-[600px] rounded-tl-[20px]" {...settings}>
-                <Image src={Unisearch} />
-                <Image src={Aist} />
-                <Image src={Eatery} />
-                <Image src={Mi} />
+            <div className="flex items-end xl:gap-[10px]">
+              <Slider
+                className="xl:w-[500px] lg:w-[360px] sm:w-screen w-[90vw] mt-[20px] lg:mt-[0px] rounded-tl-[20px]"
+                {...settings}
+              >
+                <img src={Unisearch} />
+                <img src={Aist} />
+                <img src={Eatery} />
+                <img src={Mi} />
               </Slider>
-              <div className="text-center bg-[#28292D] rounded-tl-[15px] rounded-tr-[15px]">
+              <div className="lg:block hidden text-center bg-[#28292D] rounded-tl-[15px] rounded-tr-[15px]">
                 <h2 className="text-[28px] font-bold text-[#FFF] mt-[20px]">
                   Industries
                 </h2>
-                <div className="flex  px-[20px] pt-[25px] pb-[45px] justify-between w-[200px] flex-wrap gap-[12px]">
-                  <IndustriesItem />
-                </div>
+                <IndustriesItem />
               </div>
             </div>
           </Flex>

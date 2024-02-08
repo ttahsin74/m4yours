@@ -50,7 +50,7 @@ const ContactUs = () => {
                 </div>
               </div>
             </div>
-            <div className="order-first lg:order-last lg:mb-[100px] mb-[20px] bg-white rounded-lg xl:mt-[-130px] lg:mt-[-100px] mt-[40px] lg:ml-auto m-auto border-[2px] shadow[ 0px 0px 10px 0px rgba(0,0,0,0.5);]">
+            <div className="order-first lg:order-last lg:mb-[100px] mb-[20px] bg-white rounded-lg xl:mt-[-130px] lg:mt-[-100px] mt-[40px] lg:ml-auto m-auto custom-form-shadow">
               <h2 className="text-[#113759] lg:pt-[40px] pt-[20px] pl-[30px] text-[32px] font-bold">
                 Hey! there <span className="text-[#F1614A]">:)</span>
               </h2>

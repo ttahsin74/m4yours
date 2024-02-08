@@ -1,57 +1,97 @@
-.react-tabs__tab--selected {
-    background: none;
-    border-color: transparent;
+
+.banner-custom-tab {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  & p {
     color: rgb(255, 255, 255);
-    
-}
-.react-tabs__tab {
-    border: 0px solid transparent;
-    padding: 5px 10px;
-}
-.custom-tabs{
-    border-radius: 20px 20px 0 0;
-    -webkit-border-radius: 20px 20px 0 0;
-    -moz-border-radius: 20px 20px 0 0;
-    -ms-border-radius: 20px 20px 0 0;
-    -o-border-radius: 20px 20px 0 0;
-}
-.custom-tablist{
-    border-radius: 20px 20px 0 0;
-    -webkit-border-radius: 20px 20px 0 0;
-    -moz-border-radius: 20px 20px 0 0;
-    -ms-border-radius: 20px 20px 0 0;
-    -o-border-radius: 20px 20px 0 0;
-}
-.slick-list{
-    border-radius: 20px 20px 0 0;
-    -webkit-border-radius: 20px 20px 0 0;
-    -moz-border-radius: 20px 20px 0 0;
-    -ms-border-radius: 20px 20px 0 0;
-    -o-border-radius: 20px 20px 0 0;
-}
-.video-controll{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    z-index: 999;
-    background-color: rgba(0, 0, 0, 0.651);
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-}
-.custom-underline::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: 2px; 
-    background-color: #F1614A;
+    font-size: 14px;
+    padding: 15px 0;
+    white-space: nowrap;
   }
 
+  &.react-tabs__tab--selected {
+    border-bottom: 3px solid #f1614a;
+  }
+  &:focus {
+    outline: none;
+    color: aliceblue;
+  }
+}
+.slick-list {
+  border-radius: 20px 20px 0 0;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
+}
+.video-controll {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.651);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.custom-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #f1614a;
+}
+.slick-list {
+  border-radius: 0px 0px 0 0;
+}
+
+.slick-slide {
+  width: auto !important;
+}
+.slider-item:hover .child-item {
+  opacity: 0.8;
+}
+.slick-list {
+  overflow: hiddden;
+}
+
+.custom-tab {
+  padding: 5px 10px;
+  border-radius: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &.react-tabs__tab--selected {
+    color: red;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 8px 24px rgba(150, 185, 255, 0.25),
+      0 2px 5px rgba(38, 51, 77, 0.03);
+  }
+}
+.custom-bg{
+  background-image: url("../assets/business-info.webp");
+  background-size: cover;
+  // background-position: center;
+  background-position-y:-105px;
+}
+.news-shadow{
+  box-shadow: 1px 2px 15px 0px rgba(0,0,0,0.3);
+-webkit-box-shadow: 1px 2px 15px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: 1px 2px 15px 0px rgba(0,0,0,0.3);
+}
+.custom-form-shadow {
+  box-shadow: -1px -2px 18px -7px rgba(0,0,0,0.53);
+-webkit-box-shadow: -1px -2px 18px -7px rgba(0,0,0,0.53);
+-moz-box-shadow: -1px -2px 18px -7px rgba(0,0,0,0.53);
+}
 //   ========================responsive====================
-@media (min-width:320px) and (max-width:575px){
-    
+@media (min-width: 320px) and (max-width: 575px) {
 }

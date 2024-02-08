@@ -10,7 +10,6 @@ import Mi from "../assets/mi.webp";
 import Eatery from "../assets/eatery.webp";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-// import "../Sass/index.scss";
 import { MdClose } from "react-icons/md";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -37,8 +36,8 @@ const Banner = () => {
     dots: false,
     infinite: true,
     speed: 15000,
-    slidesToShow: 1,
-    slidesToScroll: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
     arrows: false,
@@ -101,8 +100,132 @@ const Banner = () => {
               </div>
             )}
           </div>
+          <div className="flex justify-between items-end flex-wrap pt-[30px] xl:px-[0px] px-[10px]">
+            <div>
+              <picture>
+                <img className={"xl:block hidden"} src={AppDevelopment} />
+              </picture>
+            </div>
+            <div className="flex pl-5 flex-col items-center">
+              <div className="gap-[30px] flex mb-5">
+                <span className="h-[114px] w-[3px] inline-block bg-[linear-gradient(180deg,#accae4,rgba(85,114,139,0))]"></span>
+                <div className="mt-[5px]">
+                  <h3 className="text-[#FFFFFF] font-semibold text-[26px]">
+                    Web Application
+                  </h3>
+                  <p className="text-[#8C8B90]">1000+ Project done</p>
+                </div>
+              </div>
+              <div className="bg-[#28292D] w-[500px] rounded-t-[15px]">
+                <Tabs>
+                  <TabList className="flex justify-between gap-5 bg-[#2D3134] rounded-t-[15px]  px-5 overflow-auto">
+                    <Tab className={"banner-custom-tab"}>
+                      <p>Frontend</p>
+                    </Tab>
+                    <Tab className={"banner-custom-tab"}>
+                      <p>MEAN</p>
+                    </Tab>
+                    <Tab className={"banner-custom-tab"}>
+                      <p>LAMP</p>
+                    </Tab>
+                    <Tab className={"banner-custom-tab"}>
+                      <p>Mobile App</p>
+                    </Tab>
+                    <Tab className={"banner-custom-tab"}>
+                      <p>Open Source</p>
+                    </Tab>
+                  </TabList>
 
-          <Flex className="justify-between items-end flex-wrap pt-[30px] xl:px-[0px] px-[10px]">
+                  <TabPanel>
+                    <div className=" px-[20px] py-[10px]">
+                      <h2 className="mb-2 text-2xl font-medium text-white">
+                        Frontend Web Development
+                      </h2>
+                      <p className="text-[#fff]  xl:text-[14px]">
+                        M4YOURS IT is a front-end development company, provides
+                        customized, sturdy, and secure front-end solutions that
+                        are tailored to clients' requirements.It is the front
+                        end web developer who creates everything on a website,
+                        such as buttons, links, animations, and so on.
+                        Developers are responsible for translating client
+                        visions and design concepts into code.
+                      </p>
+                    </div>
+                  </TabPanel>
+                  <TabPanel>
+                    <div className=" px-[20px] py-[10px]">
+                      <h2 className="mb-2 text-2xl font-medium text-white">
+                        MEAN
+                      </h2>
+                      <p className="text-[#fff] xl:text-[14px]">
+                        M4YOURS IT provides robust and secure web application
+                        development using MongoDB, ExpressJS, Angular, NodeJS,
+                        and React. MEAN/MERN development services simplify
+                        deployment and create scalable applications aligned with
+                        client strategy.
+                      </p>
+                    </div>
+                  </TabPanel>
+                  <TabPanel>
+                    <div className=" px-[20px] py-[10px]">
+                      <h2 className="mb-2 text-2xl font-medium text-white">
+                        LAMP
+                      </h2>
+                      <p className="text-[#fff] xl:text-[14px]">
+                        For the development of dynamic, high-performance, and
+                        responsive web applications, M4YOURS IT offers services
+                        based on the LAMP (Linux, Apache, MySQL, and PHP) stack.
+                        Providing comprehensive dynamic web application
+                        development services, we create powerful applications
+                        with the highest quality standards. Our mission is to
+                        empower end users by delivering outstanding customer
+                        experiences and accelerating time-to-market.
+                      </p>
+                    </div>
+                  </TabPanel>
+                  <TabPanel>
+                    <div className=" px-[20px] py-[10px]">
+                      <h2 className="mb-2 text-2xl font-medium text-white">
+                        Mobile APP
+                      </h2>
+                      <p className="text-[#fff] xl:text-[14px]">
+                        Mobile app development services are provided by M4YOURS
+                        IT according to your needs, budget, and schedule as a
+                        leading mobile app development company in Bangladesh.
+                        Mobile app development is something we specialize in
+                        doing in Bangladesh, helping startups, small businesses,
+                        and large enterprises develop, launch, and manage custom
+                        mobile applications.
+                      </p>
+                    </div>
+                  </TabPanel>
+                  <TabPanel>
+                    <div className="px-[20px] py-[10px]">
+                      <h2 className="mb-2 text-2xl font-medium text-white">
+                        Open Source
+                      </h2>
+                      <p className="text-[#fff] xl:text-[14px]">
+                        The idea behind open-source software is to make the code
+                        publicly available. Using peer review and community
+                        production, it is developed decentralized and
+                        collaboratively. Its values and production model are
+                        used to solve problems with open-source software.
+                      </p>
+                    </div>
+                  </TabPanel>
+                </Tabs>
+              </div>
+              <div></div>
+            </div>
+            <div className="lg:block hidden text-center bg-[#28292D] rounded-tl-[15px] rounded-tr-[15px]">
+              <h2 className="text-[28px] font-bold text-[#FFF] mt-[20px]">
+                Industries
+              </h2>
+              <IndustriesItem />
+            </div>
+          </div>
+
+          {/* <Flex className="justify-between items-end flex-wrap pt-[30px] xl:px-[0px] px-[10px]">
             <Image className={"xl:block hidden"} src={AppDevelopment} />
             <div className="flex items-center flex-col ">
               <Flex className="gap-[30px] ">
@@ -114,7 +237,7 @@ const Banner = () => {
                   <p className="text-[#8C8B90]">1000+ Project done</p>
                 </div>
               </Flex>
-              <div className="bg-[#28292D] custom-tabs xl:w-[600px] lg:w-[430px] sm:w-auto">
+              <div className="bg-[#28292D] custom-tabs xl:w-[600px] lg:w-[400px] sm:w-auto">
                 <Tabs className="">
                   <TabList className="justify-between text-[#FFF] rounded-tl-[20px] rounded-tr-[20px] flex gap-0 bg-[#2D3134] py-[10px] px-[10px] min-w-sreen scroll-auto">
                     <Tab>
@@ -224,24 +347,27 @@ const Banner = () => {
               </div>
             </div>
             <div className="flex items-end xl:gap-[10px]">
-              <Slider
-                className="xl:w-[500px] lg:w-[360px] sm:w-screen w-[90vw] mt-[20px] lg:mt-[0px] rounded-tl-[20px]"
-                {...settings}
-              >
-                <img src={Unisearch} />
-                <img src={Aist} />
-                <img src={Eatery} />
-                <img src={Mi} />
-              </Slider>
-              <div className="lg:block hidden text-center bg-[#28292D] rounded-tl-[15px] rounded-tr-[15px]">
+              {/* <Slider {...settings}>
+                <Image src={Unisearch} />
+                <Image src={Aist} />
+                <Image src={Eatery} />
+                <Image src={Mi} />
+              </Slider> */}
+          {/* <div className="lg:block hidden text-center bg-[#28292D] rounded-tl-[15px] rounded-tr-[15px]">
                 <h2 className="text-[28px] font-bold text-[#FFF] mt-[20px]">
                   Industries
                 </h2>
                 <IndustriesItem />
               </div>
-            </div>
-          </Flex>
+            </div> */}
+          {/* </Flex> */}
         </Flex>
+      </div>
+      <div className="text-[#4F4E53] rotate-[-90deg] fixed top-[200px] right-[-25px]">
+        <span>Follow Us - </span>
+        <span  target="_blank" className="hover:text-[#F1614A] duration-300"><a href="https://www.facebook.com/m4yours" rel="noopener noreferrer">Fb. </a></span>
+        <span>\ </span>
+        <span className="hover:text-[#F1614A] duration-300"><a  target="_blank" href="https://www.youtube.com/channel/UCaUMD5yQUUkThgyE0BlTZjg" rel="noopener noreferrer">Yt.</a></span>
       </div>
     </section>
   );

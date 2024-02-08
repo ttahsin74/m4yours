@@ -1,30 +1,32 @@
 import Counter from "./Layout/Counter";
-import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { motion } from "framer-motion";
+import { motion  } from "framer-motion";
 
 const CompletedWorks = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
-
-  useEffect(() => {
-    if (inView) {
-      console.log("CountUp section is now visible!");
-    }
-  }, [inView]);
-
+  // const controls = useAnimation();
+  // useEffect(() => {
+  //   if (inView) {
+  //     controls.start({ opacity: 1, y: 0 });
+  //   }
+  // }, [inView, controls]);
   return (
-    <div className=" mt-[70px]">
+    <div className=" mt-[70px] ">
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0, y: 80 }}
         animate={{
           opacity: inView ? 1 : 0,
           y: inView ? 0 : 50,
-          transition: { duration: 0.8, ease: "easeInOut", delay: 0.2 },
+          transition: { duration: 0.7, delay: 0.5 },
         }}
       >
-        <div className="text-center lg:px-[0px] px-[15px]">
+        <div
+          ref={ref}
+          // inView={inView}
+          className="text-center lg:px-[0px] px-[15px]"
+        >
           <p className="text-[#F1614A] mb-[15px] inline-block text-[14px] bg-[#FFEFEC] py-[10px] px-[20px] rounded-[20px]">
             What We Achieved
           </p>
@@ -38,7 +40,7 @@ const CompletedWorks = () => {
           </p>
         </div>
       </motion.div>
-      <div ref={ref} className="flex flex-wrap">
+      <div className="flex flex-wrap">
         <Counter
           limit={"12"}
           suffix={"+"}
@@ -46,7 +48,6 @@ const CompletedWorks = () => {
           details={
             "Our team has been running well for about 10 years and keeps going"
           }
-          inView={inView}
         />
         <Counter
           limit={98}
@@ -55,14 +56,12 @@ const CompletedWorks = () => {
           details={
             "Based on our happy clients about the quality of our products & services."
           }
-          inView={inView}
         />
         <Counter
           limit={4500}
           suffix={"+"}
           children={"Projects Completed"}
           details={"All projects completed with absolutely high quality"}
-          inView={inView}
         />
       </div>
     </div>

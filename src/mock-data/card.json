@@ -1,0 +1,29 @@
+
+[
+  {
+    "icon": "https://m4yours.com/_next/image?url=%2Fassets%2Ficons%2Finnovation%2Fweb-application.webp&w=48&q=75",
+    "serviceName": "Web Application Development",
+    "serviceDetails": "Setting goals for the app's purpose is essential in developing a web app. Using dependable independent talents, such as front-end and back-end developers...",
+    "bg":"#000"
+  },
+  {
+    "icon": "https://m4yours.com/_next/image?url=%2Fassets%2Ficons%2Finnovation%2Fmobile-apps.webp&w=48&q=75",
+    "serviceName": " Mobile Application Development",
+    "serviceDetails": "The process of creating software for smartphones and digital assistants, most frequently for Android and iOS, is known as mobile application development..."
+  },
+  {
+    "icon": "https://m4yours.com/_next/image?url=%2Fassets%2Ficons%2Finnovation%2Ffrontend.webp&w=48&q=75",
+    "serviceName": "Frontend Development",
+    "serviceDetails": "Frontend development is the branch of web development that concentrates on user experience. It entails converting the code created by backend developers..."
+  },
+  {
+    "icon": "https://m4yours.com/_next/image?url=%2Fassets%2Ficons%2Finnovation%2Fopen-source.webp&w=48&q=75",
+    "serviceName": "Open Source Development",
+    "serviceDetails": "Computers are the foundation of open source software. Open source solutions are a great way to tackle contemporary problems like technological stagnation. The..."
+  },
+  {
+    "icon": "https://m4yours.com/_next/image?url=%2Fassets%2Ficons%2Finnovation%2FdevOps.webp&w=48&q=75",
+    "serviceName": "Cloud & DevOps",
+    "serviceDetails": "It enables regression testing, real-time reporting, and a transparent development process. With the help of our time-saving DevOps development services, you can..."
+  }
+]

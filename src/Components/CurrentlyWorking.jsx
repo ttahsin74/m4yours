@@ -12,13 +12,13 @@ import CurrentlyWorkingBtn from "./Layout/CurrentlyWorkingBtn";
 
 const CurrentlyWorking = () => {
   return (
-    <section className="pb-[80px]">
+    <section className="py-[80px]">
       <div className="lg:max-w-[1170px] w-auto m-auto">
         <div className="text-center pb-[50px]">
           <h2 className="mb-[20px] text-[#113759]  lg:text-[50px] text-[35px] font-bold leading-[40px]">
             Currently Working
           </h2>
-          <p className="text-[#545358] mt-3">
+          <p className="text-lg text-[#8C8B90] mt-3">
             Our happiness lies in the journey
           </p>
         </div>

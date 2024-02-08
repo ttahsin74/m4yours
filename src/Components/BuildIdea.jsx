@@ -1,17 +1,31 @@
-import React from "react";
+// import React, { useRef } from "react";
 import IdeasItem from "./Layout/IdeasItem";
+import {motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const BuildIdea = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
   return (
     <section className="bg-[#FBFDFF] pt-[80px]">
       <div className="max-w-[1170px] m-auto">
-        <div className="max-w-[770px] m-auto p-[15px] lg:p-[0]">
-          <h3 className="text-[#113759] text-[36px] font-bold">
-            We build ideas driven by the future.
-          </h3>
-          <p className="mt-[15px] lg:mb-[40px] mb-[20px] text-base font-medium text-[#F1614A]">
-            — The process
-          </p>
+        <div ref={ref} inView={inView}
+         className="max-w-[770px] m-auto p-[15px] lg:p-[0]">
+          <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          animate={{
+            opacity: inView ? 1 : 0,
+            y: inView ? 0 : 50,
+            transition: { duration: 1 , delay: 1},
+          }}>
+            <h3 className="text-[#113759] text-[36px] font-bold">
+              We build ideas driven by the future.
+            </h3>
+            <p className="mt-[15px] lg:mb-[40px] mb-[20px] text-base font-medium text-[#F1614A]">
+              — The process
+            </p>
+            </motion.div>
           <div className="flex lg:gap-[40px] gap-[20px] flex-wrap justify-between">
             <IdeasItem
               iteasTitel={"Discover_"}

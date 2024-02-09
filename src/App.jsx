@@ -22,7 +22,7 @@ export default function App() {
       <CompletedWorks />
       <BuildIdea />
       {/* <Services /> */}
-      {/* <WorkSlider/> */}
+      <WorkSlider/>
       <UsesTenchnology/>
       <CurrentlyWorking />
       <InsightNews />

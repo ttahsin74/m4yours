@@ -69,11 +69,12 @@
 
   &.react-tabs__tab--selected {
     color: red;
+    box-shadow: 0 8px 24px rgba(150, 185, 255, 0.25),
+      0 2px 5px rgba(38, 51, 77, 0.03);
   }
   &:focus {
     outline: none;
-    box-shadow: 0 8px 24px rgba(150, 185, 255, 0.25),
-      0 2px 5px rgba(38, 51, 77, 0.03);
+    
   }
 }
 .custom-bg{

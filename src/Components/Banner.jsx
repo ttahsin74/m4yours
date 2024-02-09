@@ -15,6 +15,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import IndustriesItem from "./IndustriesItem";
+import { LiaApple } from "react-icons/lia";
 
 const Banner = () => {
   const [isVideoVisible, setVideoVisible] = useState(false);
@@ -61,7 +62,7 @@ const Banner = () => {
           </h4>
           <div className="inline-block text-center px-[10px] text-[#fff] font-semibold">
             <div
-              className="inline-block"
+              className="inline-block cursor-pointer"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               onClick={handleVideo}
@@ -105,6 +106,20 @@ const Banner = () => {
               <picture>
                 <img className={"xl:block hidden"} src={AppDevelopment} />
               </picture>
+              <div>
+                <h5>App Development</h5>
+                <div>
+                  <div className="flex">
+                    <span>
+                      <LiaApple />
+                    </span>
+                      <div>
+                        <h5>ISO</h5>
+                        <p>20+ Project Done</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="flex pl-5 flex-col items-center">
               <div className="gap-[30px] flex mb-5">
@@ -365,9 +380,21 @@ const Banner = () => {
       </div>
       <div className="text-[#4F4E53] rotate-[-90deg] fixed top-[200px] right-[-25px]">
         <span>Follow Us - </span>
-        <span  target="_blank" className="hover:text-[#F1614A] duration-300"><a href="https://www.facebook.com/m4yours" rel="noopener noreferrer">Fb. </a></span>
+        <span target="_blank" className="hover:text-[#F1614A] duration-300">
+          <a href="https://www.facebook.com/m4yours" rel="noopener noreferrer">
+            Fb.{" "}
+          </a>
+        </span>
         <span>\ </span>
-        <span className="hover:text-[#F1614A] duration-300"><a  target="_blank" href="https://www.youtube.com/channel/UCaUMD5yQUUkThgyE0BlTZjg" rel="noopener noreferrer">Yt.</a></span>
+        <span className="hover:text-[#F1614A] duration-300">
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCaUMD5yQUUkThgyE0BlTZjg"
+            rel="noopener noreferrer"
+          >
+            Yt.
+          </a>
+        </span>
       </div>
     </section>
   );

@@ -12,8 +12,8 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { MdClose } from "react-icons/md";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 import IndustriesItem from "./IndustriesItem";
 import { LiaApple } from "react-icons/lia";
 
@@ -101,21 +101,30 @@ const Banner = () => {
               </div>
             )}
           </div>
-          <div className="flex justify-between items-end flex-wrap pt-[30px] xl:px-[0px] px-[10px]">
-            <div>
+          <div className="flex justify-between items-end flex-wrap pt-[30px] xl:px-[0px] px-[10px] ">
+            <div className="relative">
               <picture>
                 <img className={"xl:block hidden"} src={AppDevelopment} />
               </picture>
-              <div>
-                <h5>App Development</h5>
-                <div>
-                  <div className="flex">
-                    <span>
+              <div className="inline-block text-white absolute top-[-90px] right-[-55px]">
+                <h5 className="text-[#8C8B90] mb-2">App Development</h5>
+                <div className="bg-[#252628] p-5 rounded-[10px]">
+                  <div className="flex gap-2">
+                    <span className="mt-1">
                       <LiaApple />
                     </span>
                       <div>
                         <h5>ISO</h5>
-                        <p>20+ Project Done</p>
+                        <p className="text-[#8C8B90]">20+ Project Done</p>
+                      </div>
+                  </div>
+                  <div className="flex gap-2 mt-4">
+                    <span className="mt-1">
+                      <LiaApple />
+                    </span>
+                      <div>
+                        <h5>Android</h5>
+                        <p className="text-[#8C8B90]">30+ Project Done</p>
                       </div>
                   </div>
                 </div>

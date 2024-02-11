@@ -21,7 +21,7 @@ export default function App() {
        <TopCompanis />
       <CompletedWorks />
       <BuildIdea />
-      {/* <Services /> */}
+      <Services />
       <WorkSlider/>
       <UsesTenchnology/>
       <CurrentlyWorking />

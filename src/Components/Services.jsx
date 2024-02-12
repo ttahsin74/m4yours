@@ -100,7 +100,7 @@ const Services = () => {
             cardData.map((value, index) => {
               return (
                 <div key={index} className="slider-item mt-10 ">
-                  <div className=" group rounded-[20px] px-[30px] pt-[40px] pb-[15px] bg-[#864e4e0c] w-[340px] mx-[20px]">
+                  <div className="h-full group rounded-[20px] px-[30px] pt-[40px] pb-[15px]  w-[340px] mx-[20px]">
                     <Image
                       className={`inline-block bg-[${value.bg}] p-[25px] rounded-full  duration-300  group-hover:opacity-0 group-hover:mt-[-40px]`}
                       src={value.icon}
@@ -111,7 +111,7 @@ const Services = () => {
                     <p className=" text-base text-[#808291] mb-[30px] duration-[1000ms]">
                       {value.serviceDetails}
                     </p>
-                    <div className="flex opacity-0 items-center  duration-300 group-hover:opacity-1 mt-auto">
+                    <div className="flex opacity-0 items-center  duration-[800ms] group-hover:opacity-100   group-hover:mt-[-15px]">
                       <span className="inline-block bg-[#F1614A] h-[2px] w-[20px]"></span>
                       <p className="text-[#F1614A] inline-block ml-[10px]">
                         Learn More

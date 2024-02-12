@@ -15,7 +15,7 @@ const Navber = () => {
   }
   return (
     <section className=" sticky top-0 z-50 w-full">
-      <nav className="m-auto bg-[#1C1C1F] relative z-20">
+      <nav className="m-auto bg-[#1C1C1F] relative -z-20">
         <Flex className="justify-between items-center xl:px-[80px] lg:px-[45px] sm:px-[40px] px-[10px] py-[6px]">
           <div
             className="lg:hidden text-[#444] hover:cursor-pointer"

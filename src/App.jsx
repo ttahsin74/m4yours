@@ -12,6 +12,8 @@ import ContactUs from "./Components/ContactUs";
 import Fotter from "./Components/Fotter";
 import WorkSlider from "./Components/WorkSlider";
 import UsesTenchnology from "./Components/UsesTenchnology";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function App() {
   return (

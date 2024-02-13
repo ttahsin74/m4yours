@@ -1,7 +1,7 @@
 import React from "react";
 import { FaHeartCirclePlus } from "react-icons/fa6";
 
-const IndustriesItem = ({ itemName, itemIcon }) => {
+const IndustriesItem = () => {
   return (
     <div className="flex  px-[10px] pt-[25px] xl:pb-[45px] pb-[20px] justify-between  lg:w-[180px] flex-wrap gap-[12px]">
       <div className="bg-[#2C2D31] text-center p-[10px]">

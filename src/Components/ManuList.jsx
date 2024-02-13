@@ -27,20 +27,20 @@ const ManuList = ({ isVisible, handleMenuClose }) => {
           size={"40px"}
         />
       </div>
-      <li className="hover:text-[#A62612] cursor-pointer py-[10px] lg:py-[20px] xl:px-[25px] lg:px-[10px] duration-[300ms]">
+      <li className="hover:text-[#A62612] cursor-pointer py-[10px] lg:py-[20px] xl:px-[22px] lg:px-[10px] duration-[300ms]">
         <a href="">Home</a>
       </li>
       <li
         onClick={handleListShow}
-        className={`hover:text-[#A62612] cursor-pointer py-[10px] lg:py-[20px] xl:px-[25px] lg:px-[10px] group lg:block flex justify-between`}
+        className={`hover:text-[#A62612] cursor-pointer py-[10px] lg:py-[20px] xl:px-[22px] lg:px-[10px] group lg:block grid grid-cols-2 `}
       >
         <a href="">About</a>
         <MdKeyboardArrowDown className="lg:inline-block hidden " />
-        <FaPlus className="inline-block lg:hidden " />
+        <FaPlus className="block lg:hidden ml-auto" />
         <ul
-          className={`lg:absolute  lg:mt-0 mt-[10px] bg-[#252628] p-[25px] w-[100%] top-[-20%] opacity-0 left-0  duration-500 scale-y-0 lg:group-hover:top-[80px] lg:group-hover:scale-y-100 lg:group-hover:opacity-100 ${
+          className={`z-50 col-auto lg:absolute  lg:mt-0 mt-[10px] bg-[#252628] p-[25px] w-[100%] top-[-20%] opacity-0 left-0  duration-500 scale-y-0 lg:group-hover:top-[80px] lg:group-hover:scale-y-100 lg:group-hover:opacity-100 ${
             listShow ? "static" : "absolute"
-          }`}
+          } col-[1_/_span_2]`}
         >
           <div>
             <Flex className="justify-center gap-[120px]">
@@ -86,29 +86,29 @@ const ManuList = ({ isVisible, handleMenuClose }) => {
           </div>
         )} */}
       </li>
-      <li className="hover:text-[#A62612] lg:py-[20px] py-[10px] xl:px-[25px] lg:px-[10px] cursor-pointer duration-[300ms] lg:block flex justify-between">
+      <li className="hover:text-[#A62612] lg:py-[20px] py-[10px] xl:px-[22px] lg:px-[10px] cursor-pointer duration-[300ms] lg:block flex justify-between">
         <a href="">Service</a>
         <MdKeyboardArrowDown className="lg:inline-block hidden " />
         <FaPlus className="inline-block lg:hidden " />
       </li>
-      <li className="hover:text-[#A62612] lg:py-[20px] py-[10px] xl:px-[25px] lg:px-[10px] cursor-pointer duration-[300ms] lg:block flex justify-between">
+      <li className="hover:text-[#A62612] lg:py-[20px] py-[10px] xl:px-[22px] lg:px-[10px] cursor-pointer duration-[300ms] lg:block flex justify-between">
         <a href="">Industries</a>
         <MdKeyboardArrowDown className="lg:inline-block hidden " />
         <FaPlus className="inline-block lg:hidden " />
 
       </li>
-      <li className="hover:text-[#A62612] lg:py-[20px] py-[10px] xl:px-[25px] lg:px-[10px] cursor-pointer duration-[300ms] lg:block flex justify-between">
+      <li className="hover:text-[#A62612] lg:py-[20px] py-[10px] xl:px-[23px] lg:px-[10px] cursor-pointer duration-[300ms] lg:block flex justify-between">
         <a href="">Works</a>
         <MdKeyboardArrowDown className="lg:inline-block hidden " />
         <FaPlus className="inline-block lg:hidden " />
       </li>
-      <li className="hover:text-[#A62612]lg:py-[20px] py-[10px] xl:px-[25px] lg:px-[10px] cursor-pointer duration-[300ms]">
+      <li className="hover:text-[#A62612]lg:py-[20px] py-[10px] xl:px-[23px] lg:px-[10px] cursor-pointer duration-[300ms]">
         <a href="">Cloud</a>
       </li>
-      <li className="hover:text-[#A62612] lg:py-[20px] py-[10px] xl:px-[25px] lg:px-[10px] cursor-pointer duration-[300ms]">
+      <li className="hover:text-[#A62612] lg:py-[20px] py-[10px] xl:px-[23px] lg:px-[10px] cursor-pointer duration-[300ms]">
         <a href="">Blog</a>
       </li>
-      <li className="hover:text-[#A62612] lg:py-[20px] py-[10px] xl:px-[25px] lg:px-[10px] cursor-pointer duration-[300ms]">
+      <li className="hover:text-[#A62612] lg:py-[20px] py-[10px] xl:px-[23px] lg:px-[10px] cursor-pointer duration-[300ms]">
         <a href="">Contact</a>
       </li>
     </ul>

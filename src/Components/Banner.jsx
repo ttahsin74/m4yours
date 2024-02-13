@@ -101,12 +101,12 @@ const Banner = () => {
               </div>
             )}
           </div>
-          <div className="flex justify-between items-end flex-wrap pt-[30px] xl:px-[0px] px-[10px] ">
+          <div className="flex md:justify-between justify-center items-end flex-wrap pt-[30px] xl:px-[0px] px-[20px] ">
             <div className="relative">
               <picture>
                 <img className={"xl:block hidden"} src={AppDevelopment} />
               </picture>
-              <div className="inline-block text-white absolute top-[-90px] right-[-55px]">
+              <div className=" text-white lg:static xl:absolute top-[-90px] right-[-55px] md:block hidden">
                 <h5 className="text-[#8C8B90] mb-2">App Development</h5>
                 <div className="bg-[#252628] p-5 rounded-[10px]">
                   <div className="flex gap-2">
@@ -130,7 +130,7 @@ const Banner = () => {
                 </div>
               </div>
             </div>
-            <div className="flex pl-5 flex-col items-center">
+            <div className="flex flex-col items-center">
               <div className="gap-[30px] flex mb-5">
                 <span className="h-[114px] w-[3px] inline-block bg-[linear-gradient(180deg,#accae4,rgba(85,114,139,0))]"></span>
                 <div className="mt-[5px]">
@@ -140,7 +140,7 @@ const Banner = () => {
                   <p className="text-[#8C8B90]">1000+ Project done</p>
                 </div>
               </div>
-              <div className="bg-[#28292D] w-[500px] rounded-t-[15px]">
+              <div className="bg-[#28292D] sm:w-[500px] w-[400px] rounded-t-[15px] custom-tab-width">
                 <Tabs>
                   <TabList className="flex justify-between gap-5 bg-[#2D3134] rounded-t-[15px]  px-5 overflow-auto">
                     <Tab className={"banner-custom-tab"}>

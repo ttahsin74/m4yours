@@ -12,7 +12,7 @@ import CurrentlyWorkingBtn from "./Layout/CurrentlyWorkingBtn";
 
 const CurrentlyWorking = () => {
   return (
-    <section className="py-[80px]">
+    <section className="lg:py-[80px] py-[40px]">
       <div className="lg:max-w-[1170px] w-auto m-auto">
         <div className="text-center pb-[50px]">
           <h2 className="mb-[20px] text-[#113759]  lg:text-[50px] text-[35px] font-bold leading-[40px]">

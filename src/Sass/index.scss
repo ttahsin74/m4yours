@@ -95,5 +95,8 @@
 }
 
 //   ========================responsive====================
-@media (min-width: 320px) and (max-width: 575px) {
+@media (min-width: 320px) and (max-width: 360px) {
+  .custom-tab-width{
+    width: 320px;
+  }
 }

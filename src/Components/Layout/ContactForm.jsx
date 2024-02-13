@@ -149,13 +149,13 @@ const ContactForm = () => {
   return (
     <div>
       <form action="">
-        <div className="md:flex block gap-[30px] lg:pb-[50px]">
+        <div className="md:flex block gap-[30px] lg:pb-[50px] items-end">
           <div>
             <label className="pt-[30px] inline-block">
               Name <span className="text-[#F16171]">*</span>
             </label>
             <input
-              className=" py-[10px] block outline-none border-b-2 border-[#bababa] xl:w-[250px] lg:w-[180px] w-[280px] sm:w-[450px]"
+              className=" py-[10px] block outline-none border-b-2 border-[#bababa] xl:w-[250px] lg:w-[180px]  w-[280px] sm:w-[450px] md:w-[340px]"
               type="text"
               placeholder="Name"
               onChange={handleInput}
@@ -168,7 +168,7 @@ const ContactForm = () => {
               Your Email <span className="text-[#F16171]">*</span>
             </label>
             <input
-              className=" py-[10px] block outline-none border-b-2 border-[#bababa] lg:w-[180px] xl:w-[250px] w-[280px] sm:w-[450px]"
+              className=" py-[10px] block outline-none border-b-2 border-[#bababa] lg:w-[180px] xl:w-[250px] w-[280px] sm:w-[450px] md:w-[340px]"
               type="email"
               placeholder="Email"
               onChange={handleInput}
@@ -183,7 +183,7 @@ const ContactForm = () => {
               Your Phone <span className="text-[#F16171]">*</span>
             </label>
             <input
-              className=" py-[10px] block outline-none border-b-2 border-[#bababa] lg:w-[180px] xl:w-[250px] w-[280px] sm:w-[450px]"
+              className=" py-[10px] block outline-none border-b-2 border-[#bababa] lg:w-[180px] xl:w-[250px] w-[280px] sm:w-[450px] md:w-[340px]"
               type="tel"
               placeholder="Phone"
               onChange={handleInput}
@@ -196,7 +196,7 @@ const ContactForm = () => {
               Your Subject <span className="text-[#F16171]">*</span>
             </label>
             <input
-              className=" py-[10px] block outline-none border-b-2 border-[#bababa] lg:w-[180px] xl:w-[250px] w-[280px] sm:w-[450px]"
+              className=" py-[10px] block outline-none border-b-2 border-[#bababa] lg:w-[180px] xl:w-[250px] w-[280px] sm:w-[450px] md:w-[340px]"
               type="text"
               placeholder="Subject"
               onChange={handleInput}

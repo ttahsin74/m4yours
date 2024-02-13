@@ -13,7 +13,7 @@ const InsightNews = () => {
             <h5 className="text-[18px] font-bold text-[#113759]">
               INSIGHT & NEWS
             </h5>
-            <h3 className="text-[#113759] sm:text-[36px] text-[30px]  font-bold mb-[50px]">
+            <h3 className="text-[#113759] sm:text-[36px] text-[30px]  font-bold lg:mb-[50px] mb-[20px]">
               Stay ahead of technology paradigm shift
             </h3>
           </div>
@@ -22,7 +22,7 @@ const InsightNews = () => {
               <div className="custom-bg h-full w-full">
                 {/* <img src={Business} className="object-cover object-center h-full" /> */}
               </div>
-              <div className="px-[30px] pt-[30px] flex flex-col text-[#113759] h group-hover:bg-[#113759] duration-500 group-hover:text-white">
+              <div className="pt-[30px] flex flex-col text-[#113759] h group-hover:bg-[#113759] duration-500 group-hover:text-white">
                 <h3 className="w-[410px] text-[24px] leading-[31px] font-bold text-[#113759s]">
                   Web Development for your Businesses
                 </h3>

@@ -26,7 +26,7 @@ const OurService = () => {
           >
             <Image
               imgClassname="rounded-[12px] "
-              className="xl:ml-[-131px] lg:ml-[61px]"
+              className="xl:ml-[-131px] "
               src={ServiceImgThree}
             />
           </div>

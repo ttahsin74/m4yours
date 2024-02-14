@@ -6,12 +6,13 @@ import MenuLogo from "../assets/logo-light-fotter.svg";
 import { IoCloseSharp } from "react-icons/io5";
 import { FaPlus } from "react-icons/fa";
 
-
 const ManuList = ({ isVisible, handleMenuClose }) => {
   const [listShow, setListShow] = useState(false);
   const handleListShow = (e) => {
     e.preventDefault();
-    setListShow(!listShow);
+    if (window.innerWidth <= 1023) {
+      setListShow(!listShow);
+    }
   };
   return (
     <ul
@@ -32,15 +33,15 @@ const ManuList = ({ isVisible, handleMenuClose }) => {
       </li>
       <li
         onClick={handleListShow}
-        className={`hover:text-[#A62612] cursor-pointer py-[10px] lg:py-[20px] xl:px-[22px] lg:px-[10px] group lg:block grid grid-cols-2 `}
+        className={`hover:text-[#A62612] cursor-pointer py-[10px] lg:py-[20px] xl:px-[22px] lg:px-[10px] group lg:block grid grid-cols-2  gap-5`}
       >
         <a href="">About</a>
         <MdKeyboardArrowDown className="lg:inline-block hidden " />
         <FaPlus className="block lg:hidden ml-auto" />
         <ul
-          className={`z-50 col-auto lg:absolute  lg:mt-0 mt-[10px] bg-[#252628] p-[25px] w-[100%] top-[-20%] opacity-0 left-0  duration-500 scale-y-0 lg:group-hover:top-[80px] lg:group-hover:scale-y-100 lg:group-hover:opacity-100 ${
+          className={`bg-[#252628] lg:absolute ${
             listShow ? "static" : "absolute"
-          } col-[1_/_span_2]`}
+          } w-full p-[25px] lg:top-0 top-[-200px] left-0 lg:group-hover:[80px] lg:scale-y-0 duration-300 lg:group-hover:top-[80px] lg:group-hover:scale-y-100 lg:opacity-0 lg:group-hover:opacity-100 lg:col-span-0 col-span-2 transition-height`}
         >
           <div>
             <Flex className="justify-center gap-[120px]">
@@ -95,7 +96,6 @@ const ManuList = ({ isVisible, handleMenuClose }) => {
         <a href="">Industries</a>
         <MdKeyboardArrowDown className="lg:inline-block hidden " />
         <FaPlus className="inline-block lg:hidden " />
-
       </li>
       <li className="hover:text-[#A62612] lg:py-[20px] py-[10px] xl:px-[23px] lg:px-[10px] cursor-pointer duration-[300ms] lg:block flex justify-between">
         <a href="">Works</a>

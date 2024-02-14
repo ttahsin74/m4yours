@@ -16,12 +16,17 @@ import Slider from "react-slick";
 // import "slick-carousel/slick/slick-theme.css";
 import IndustriesItem from "./IndustriesItem";
 import { LiaApple } from "react-icons/lia";
+import YouTube from "react-youtube";
 
 const Banner = () => {
   const [isVideoVisible, setVideoVisible] = useState(false);
   const [isHover, setHover] = useState(false);
   const handleVideo = () => {
     setVideoVisible(true);
+    const video = document.getElementById("videoPlayer");
+    if (video) {
+      video.play(); // Play the video
+    }
   };
   const handlecloseButton = () => {
     setVideoVisible(false);
@@ -84,17 +89,20 @@ const Banner = () => {
             </div>
             {isVideoVisible && (
               <div className="video-controll">
-                <iframe
-                  width="695"
-                  height="391"
-                  src="https://www.youtube.com/embed/JiS0TBNefg0"
-                  title="M4YOURS IT, an honorable offshore software development company"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
+                <YouTube
+                  videoId="JiS0TBNefg0"
+                  opts={{
+                    // height: "391",
+                    // width: "695",
+                    playerVars: {
+                      autoplay: 1,
+                    },
+                  }}
+                  onReady={(e) => e.target.playVideo()}
+                />
+
                 <MdClose
-                  className="absolute top-[-10px] right-[-50px]"
+                  className="absolute top-[-10px] right-[-50px] cursor-pointer"
                   size={"50px"}
                   onClick={handlecloseButton}
                 />
@@ -113,19 +121,19 @@ const Banner = () => {
                     <span className="mt-1">
                       <LiaApple />
                     </span>
-                      <div>
-                        <h5>ISO</h5>
-                        <p className="text-[#8C8B90]">20+ Project Done</p>
-                      </div>
+                    <div>
+                      <h5>ISO</h5>
+                      <p className="text-[#8C8B90]">20+ Project Done</p>
+                    </div>
                   </div>
                   <div className="flex gap-2 mt-4">
                     <span className="mt-1">
                       <LiaApple />
                     </span>
-                      <div>
-                        <h5>Android</h5>
-                        <p className="text-[#8C8B90]">30+ Project Done</p>
-                      </div>
+                    <div>
+                      <h5>Android</h5>
+                      <p className="text-[#8C8B90]">30+ Project Done</p>
+                    </div>
                   </div>
                 </div>
               </div>

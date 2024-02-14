@@ -23,8 +23,8 @@ export default function App() {
        <TopCompanis />
       <CompletedWorks />
       <BuildIdea />
-      <Services />
-      <WorkSlider/>
+      {/* <Services /> */}
+      {/* <WorkSlider/> */}
       <UsesTenchnology/>
       <CurrentlyWorking />
       <InsightNews />

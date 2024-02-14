@@ -4,7 +4,7 @@ const HoverList = ({ className, listName }) => {
   return (
     <div>
       <ul>
-        <li className={`text-[#fff]  ${className}`}>{listName}</li>
+        <li className={`text-[#ff3c3c]  ${className}`}>{listName}</li>
       </ul>
     </div>
   );

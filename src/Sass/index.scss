@@ -25,12 +25,15 @@
 // //   -ms-border-radius: 20px 20px 0 0;
 // //   -o-border-radius: 20px 20px 0 0;
 // }
+// .you-tube-video{
+//   width: 100;
+//   background-color: rgba(0, 0, 0, 0.651);
+// }
 .video-controll {
   position: fixed;
   top: 50%;
   left: 50%;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.651);
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -97,6 +100,7 @@
 //   ========================responsive====================
 @media (min-width: 320px) and (max-width: 360px) {
   .custom-tab-width{
-    width: 320px;
+    width: 30px;
   }
 }
+
